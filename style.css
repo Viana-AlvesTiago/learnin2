@@ -1,68 +1,109 @@
-body{
+body {
     margin: 0;
-    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;
+  }
+  
+  .page {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  a {
+    color: #1f1534;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+      
+  ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+  }
+
+  main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    color: #1f1534;
+    font-weight: normal;
+    width: 490px;
+  }
+  
+  h1 span {
+    color: #89c5cc;
+    font-weight: bold;
+  }
+  
+  section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+  
+    margin: 40px 0;
+  }
+  
+  button {
+    width: 182px;
+    height: 56px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: #69b99d;
+    color: white;
+    padding: 14px 32px 15px 32px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+      background: #4EA788;
+  }
+  
+  footer {
+    font-size: 14px;
+    line-height: 28px;
+  
     text-align: center;
-}
-
-#main{
-    width: 626;
-    margin: 64px auto;
-    
-}
-
-#main img {
-    margin: 0 72px 32px 72px;
-}
-
-#main h1{
-    font-family: 'Dosis', sans-serif;
-    font-weight: normal;
-    font: 32px;
-}
-
-#main h1 span{
+  
+    margin-top: 80px;
+  }
+  
+  footer a {
     font-weight: bold;
-    color: #EE24FF;
-}
-
-#main p{
-    font-family: 'Open-Sans', sans-serif;
-    font-weight: normal;
-    font: 15px;
-    color: #828282;
-
-}
-
-#main p strong{
-    font-weight: bold;
-    color: #3f3d56;
-}
-
-#footer{
-    width: 1024px;
-    margin: auto;
-}
-
-#footer #line{
-    width: 391px;
-    height: 0;
-    border: 1px solid #ECEff2;
-    margin:  0 auto 16px ;
-}
-
-#footer a{
-    font-family: 'Open-Sans', sans-serif;
-    font-weight: bold;
-    font: 15px;
-    color: #3f3d56;
-        
-}
-
-#footer a + a{
-    margin-left: 42px;
-}
-
-
-#wave{
-    margin-top: 40.83px;
-}
+  }
+  
+  #balls {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  }
+  
